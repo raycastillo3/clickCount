@@ -1,16 +1,16 @@
 # Apache Datahub
 
-~ I built Apache Datahub a click tracking software!
+~ I built *Apache Datahub* a click-tracking software that allows Data Analysts, Marketing Teams, and Web Developers to keep track of clicks on a website. 
 
-Tracking user clicks on an e-commerce site is crucial for engineers as it provides invaluable insights into user behavior, enabling the optimization of website design and functionality. This data helps identify popular products, enhance user experience, and refine the overall site navigation, ultimately leading to increased customer satisfaction and higher conversion rates. By understanding how users interact with the platform, engineers can make informed decisions to tailor the online shopping experience and boost business success.
+Tracking user clicks on an e-commerce site is crucial for engineers as it provides invaluable insights into user behavior, enabling the optimization of website design and functionality. This data helps identify popular products, enhance user experience, and refine the overall site navigation, leading to increased customer satisfaction and higher conversion rates. By understanding how users interact with the platform, engineers can make informed decisions to tailor the online shopping experience and boost business success.
 
-Apache Datahub have two main components. The primary component will be referred to as the "database", and it keeps track of a global count of items clicked, add to cart button clicks, and buy button clicks. It also hosts the GRPC server, which web servers can use to get and set values for items clicked, add to cart button clicks, and buy button clicks.
+Apache Datahub has two main components. The primary component will be referred to as the "database", and it keeps track of a global count of `items`, `add to cart`, and `buy` button clicks. It also hosts the GRPC server, which web servers can use to get and set values for `items`, `add to cart`, and `buy` button clicks.
 
-The other component, referred to as the "webserver", consists of three important parts. First, it serves a simple webpage with `item`, `add to cart`, and `buy buttons`, which allows us to test clicks from visitors/ users. Secondly, it hosts an HTTP API which the webpage reaches out to in order to update click counts. Finally, it runs a GRPC client, which allows the client to get and update the global count of the central server.
+The other component, referred to as the "webserver", consists of three important parts. First, it serves a simple webpage with `item`, `add to cart`, and `buy buttons`, which allows us to test clicks from visitors/ users. Second, it hosts an HTTP API which the webpage reaches out to in order to update click counts. Finally, it runs a GRPC client, which allows the client to get and update the global count of the central server.
 
 This project supports many webservers against the database. The webserver will maintain a local cache of click counts and periodically sync these values with the database, to precisely collect clicks with low load.
 
-***
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### To build the binary:
 
