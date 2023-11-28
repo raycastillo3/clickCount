@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title >{{ .Name }}</title>
+        <link rel="stylesheet" href="static/styles.css">
+        <script src="static/script.js"></script>
+    </head>
+
+    <body>
+        <h1>BackEnd: {{ .Name  }}</h1>
+
+        <h2>Current click counts:<h2>
+        <ul style="list-style-type: none;">
+        {{ range $item := .Items }}
+        <li class="item-label" id="item-label-{{ $item }}"> {{ $item }}: 0 </li>
+        {{ end }}
+        </ul>
+
+        <h2>Test by Clicking Button:<h2>
+        {{ range $item := .Items }}
+        <div class="item-button item-button-{{$item }}"
+            onclick="itemClicked('{{ $item }}')">{{ $item}}
+          </div>
+        {{ end }}
+    </body>
+
+</html>
