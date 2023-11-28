@@ -10,6 +10,8 @@ The other component, referred to as the "webserver", consists of three important
 
 This project supports many webservers against the database. The webserver will maintain a local cache of click counts and periodically sync these values with the database, to precisely collect clicks with low load.
 
+***
+
 ### To build the binary:
 
 ```
