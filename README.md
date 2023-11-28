@@ -1,6 +1,6 @@
 # Apache Datahub
 
-~ I built *Apache Datahub* a click-tracking software that allows Data Analysts, Marketing Teams, and Web Developers to keep track of clicks on a website. This is a backend project.
+~ I built *Apache Datahub* a click-tracking software that allows ***Data Analysts***, ***Marketing Teams***, and ***Web Developers*** to keep track of clicks on a website. This is a backend project.
 
 Tracking user clicks on an e-commerce site is crucial for engineers as it provides invaluable insights into user behavior, enabling the optimization of website design and functionality. This data helps identify popular products, enhance user experience, and refine the overall site navigation, leading to increased customer satisfaction and higher conversion rates. By understanding how users interact with the platform, engineers can make informed decisions to tailor the online shopping experience and boost business success.
 
