@@ -79,6 +79,3 @@ go generate ./pb/...
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Example of how the front end would look like: 
-<img width="1201" alt="Screen Shot 2023-11-28 at 12 54 22 AM" src="https://github.com/raycastillo3/clickCountApp/assets/60750068/89fca51e-c48d-4a54-a301-4c7abba5fe9b">
-
